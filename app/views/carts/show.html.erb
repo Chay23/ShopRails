@@ -1,24 +1,18 @@
-<article>
-<% if notice %>
 <p id="notice"><%= notice %></p>
-<% end %>
-
-<h2>Your Cart</h2>
- <table>
-<% @cart.line_items.each do |item| %>
+    <h2>Your Cart</h2>
+    <table>
+    <% @cart.line_items.each do |item| %>
     <tr>
-        <td class="quantity"><%= item.quantity %>&times;</td>
-        <td><%= item.product.title %></td>
-        <td class="price"><%= sprintf("₴%0.02f", item.total_price) %></td>
+        <td><%= item.quantity %>&times;</td>
+         <td><%= item.product.title %></td>
+        <td class="item_price"><%= sprintf("₴%0.02f", item.total_price) %></td>
     </tr>
 <% end %>
-<tfoot>
- <tr>
- <td colspan="2">Total</td>
 
- <td class="price"><%= sprintf("₴%0.02f", @cart.total_price) %></td>
- </tr>
- </tfoot>
- </table>
-<%= button_to 'Empty cart', @cart, method: :delete, data: { confirm: 'Are you sure?' } %>
-</article>
+    <tr class="total_line">
+        <td colspan="2">Total</td>
+         <td class="total_cell"><%= sprintf("₴%0.02f", @cart.total_price) %></td>
+    </tr>  
+    </table>
+<%= button_to 'Empty cart', @cart, method: :delete,
+data: { confirm: 'Are you sure?' } %>

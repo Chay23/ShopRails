@@ -1,5 +1,6 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
+
 one:
   title: Спінінг Salmo Blaster Spin 80 210см (20–80 Гр)
   description: Спінінг Salmo Blaster Spin 80 210см - це недорогий спінінг середньо-швидкого 
@@ -17,5 +18,15 @@ two:
         Укомплектоване посиленими кільцями із вставками SIC, на двох ніжках та додатковим розвантажувальним 
         кілечком на верхньому коліні з кольоровою вершинкою.
   image_url: salmo-blaster-tele-boat_1.jpg
+  price: 412.00
+
+
+three:
+  title: Спінінг Salmo Sniper Ultra Spin 25 210см (5–25 Гр)
+  description: Спінінг Salmo Sniper Ultra Spin 25 210см - це універсальний спінінг середньо-швидкого ладу з 
+        композиту. Бланк має класичну розстановку кілець зі вставками SIC на одній ніжці кріплення,
+        а найбільше - на двох, стик колін спінінга проведений за типом Over Steek. Ручка має класичний 
+        катушкотримач з нижньою гайкою кріплення і пластиковий наконечник на торці.
+  image_url: salmo_sniper_ultra_spin_25.jpg
   price: 412.00
 

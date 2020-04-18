@@ -7,26 +7,32 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
   </head>
 
 <body class="<%= controller.controller_name %>">
- <div id="banner">
- <%= image_tag 'logo.svg', alt: 'FishingShop' %>
- <span class="title"><%= @page_title %></span>
- </div>
- <div id="columns">
- <div id="side">
- <ul>
- <li><a href="http://www....">Home</a></li>
- <li><a href="http://www..../faq">Questions</a></li>
- <li><a href="http://www..../news">News</a></li>
-<li><a href="http://www..../contact">Contact</a></li>
- </ul>
- </div>
- <div id="main">
-<%= yield %>
- </div>
- </div>
+  <div id="banner">
+  <%= image_tag 'logo.svg', alt: 'FishingShop' %>
+  <span class="title"><%= @page_title %></span>
+  </div>
+    <div id="columns">
+      <div id="side">
+        <div id="cart" class="carts">
+          <% if @cart %>
+            <%= render @cart %>
+          <% end %>
+        </div>
+      <ul>
+        <li><a href="http://www....">Home</a></li>
+        <li><a href="http://www..../faq">Questions</a></li>
+        <li><a href="http://www..../news">News</a></li>
+        <li><a href="http://www..../contact">Contact</a></li>
+      </ul>
+    </div>
+    <div id="main">
+      <%= yield %>
+    </div>
+  </div>
 </body>
 </html>
 

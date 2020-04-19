@@ -46,14 +46,14 @@ class LineItemsControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to line_items_url
   end
 
-  test "should create line_item via ajax" do 
-    assert_difference('LineItem.count') do 
-      post line_items_url, params: { product_id: products(:one).id }, 
-        xhr: true
-  end
-  
-  assert_response :success 
-  assert_match /<tr class=\\"line-item-highlight/, @response.body
-  
-  end
+  test "should create line_item via ajax" do
+    assert_difference('LineItem.count') do
+    post line_items_url, params: { product_id: products(:one).id },
+    xhr: true
+    end
+    assert_response :success
+    assert_select_jquery :html, '#cart' do
+    assert_select 'tr#current_item td', /Спінінг Salmo Blaster Spin 80 210см (20–80 Гр)/
+    end
+    end
 end

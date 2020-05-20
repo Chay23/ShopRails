@@ -16,7 +16,7 @@ Product.create!(title: 'Спінінг Salmo Blaster Spin 80 210см (20–80 Г
         так і для більш досвідчених рибалок, які знають, що їм потрібно і не бажають переплачувати. 
     </p>},
     image_url: 'salmo_blaster_spin_80.jpg',
-    price: 412.00)
+    price: 16.00)
 
 Product.create!(title: 'Тролінговий Спінінг Salmo Blaster Tele Boat 240см До 150гр',
     description:
@@ -27,7 +27,7 @@ Product.create!(title: 'Тролінговий Спінінг Salmo Blaster Tele
         кілечком на верхньому коліні з кольоровою вершинкою.
     </p>},
     image_url: 'salmo-blaster-tele-boat_1.jpg',
-    price: 412.00)
+    price: 16.00)
 
 Product.create!(title: 'Спінінг Salmo Sniper Ultra Spin 25 210см (5–25 Гр)',
     description:
@@ -38,4 +38,4 @@ Product.create!(title: 'Спінінг Salmo Sniper Ultra Spin 25 210см (5–2
         катушкотримач з нижньою гайкою кріплення і пластиковий наконечник на торці.
     </p>},
     image_url: 'salmo_sniper_ultra_spin_25.jpg',
-    price: 431.00)
+    price: 17.00)

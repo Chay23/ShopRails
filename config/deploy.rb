@@ -16,7 +16,7 @@
 
 # set :deploy_to, "/home/#{user}/deploy/#{fetch(:application)}"
 
-user = 'chaii'
+user = 'Chay23'
 domain = 'shop.yourhost.com'
 # adjust if you are using RVM, remove if you are not
 set :rvm_type, :system
@@ -28,6 +28,3 @@ set :repo_url, "#{user}@#{domain}:git/#{fetch(:application)}.git"
 set :deploy_to, "/home/chaii/apps_rails/#{fetch(:application)}"
 # distribute your applications across servers (the instructions below put them
 # all on the same server, defined above as 'domain', adjust as necessary)
-role :app, domain
-role :web, domain
-role :db, domain

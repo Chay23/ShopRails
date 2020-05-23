@@ -1,5 +1,5 @@
 #   server '91.243.22.194', user: 'chaii', roles: %w{app db web}
-#   server 'shop.yourhost.com', user: 'chaii', roles: %w{app db web}
+  server 'shop.yourhost.com', user: 'chaii', roles: %w{app db web}
 
   # server-based syntax
 # ======================

@@ -5,18 +5,18 @@ ruby '2.7.1'
 gem 'bigdecimal', '1.4.2'
 
 #Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
-# gem 'capistrano-rvm', group: :development
-# gem 'capistrano-bundler', group: :development
-# gem 'capistrano-passenger', group: :development
+gem 'capistrano-rails', group: :development
+gem 'capistrano-rvm', group: :development
+gem 'capistrano-bundler', group: :development
+gem 'capistrano-passenger', group: :development
 
-group :development do
-  gem 'capistrano'
-  gem 'capistrano-rails'
-  gem 'capistrano-bundler'
-  gem 'capistrano-rvm'
-  gem 'capistrano-passenger', require: false, github: 'capistrano/passenger'
-end
+# group :development do
+  # gem 'capistrano'
+  # gem 'capistrano-rails'
+  # gem 'capistrano-bundler'
+  # gem 'capistrano-rvm'
+  # gem 'capistrano-passenger', require: false, github: 'capistrano/passenger'
+# end
 
 gem 'jquery-ui-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

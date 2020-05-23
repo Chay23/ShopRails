@@ -1,4 +1,10 @@
-9bdaee0a880c9af413f23b630be4bdd962814fad	not-for-merge	branch 'dependabot/bundler/puma-4.3.5' of github.com:Chay23/ShopRails
-6f9eb1002b7d3e04c821f931762c156d7544ce28	not-for-merge	branch 'master' of github.com:Chay23/ShopRails
-9bdaee0a880c9af413f23b630be4bdd962814fad	not-for-merge	'refs/pull/1/head' of github.com:Chay23/ShopRails
-ee9265b654596f1a2a6954272147fd897ef49eac	not-for-merge	'refs/pull/1/merge' of github.com:Chay23/ShopRails
+66afde517b3f853b7311e9e9d4078faf5017d030	not-for-merge	branch 'dependabot/bundler/puma-4.3.5' of github.com:Chay23/ShopRails
+e5b6f80441218685967e206dd79f7221a63ee11c	not-for-merge	branch 'dependabot/bundler/releases/20200523093133/puma-4.3.5' of github.com:Chay23/ShopRails
+5232fe08ddfa79f5d4bfba8bf5e9851fc3e247e7	not-for-merge	branch 'dependabot/bundler/shared/bundle/ruby/2.7.0/gems/bcrypt-3.1.13/rake-13.0.1' of github.com:Chay23/ShopRails
+343dba0965a367d6ea01ecae0ed3f882ab75dc82	not-for-merge	branch 'master' of github.com:Chay23/ShopRails
+66afde517b3f853b7311e9e9d4078faf5017d030	not-for-merge	'refs/pull/1/head' of github.com:Chay23/ShopRails
+eff9f4c24eb4cc3508ad2ad48362d0931112e423	not-for-merge	'refs/pull/1/merge' of github.com:Chay23/ShopRails
+5232fe08ddfa79f5d4bfba8bf5e9851fc3e247e7	not-for-merge	'refs/pull/2/head' of github.com:Chay23/ShopRails
+03eed44d058a7d28642aaac7800638ba35f77226	not-for-merge	'refs/pull/2/merge' of github.com:Chay23/ShopRails
+e5b6f80441218685967e206dd79f7221a63ee11c	not-for-merge	'refs/pull/3/head' of github.com:Chay23/ShopRails
+92dad3ecb980148747408653b7b6ee4b03cdd17f	not-for-merge	'refs/pull/3/merge' of github.com:Chay23/ShopRails

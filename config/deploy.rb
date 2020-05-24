@@ -32,6 +32,8 @@
 set :application, "ShopRails"
 set :repo_url, "git@github.com:Chay23/ShopRails.git"
 
+set :passenger_restart_with_touch, true 
+
 # Deploy to the user's home directory
 set :deploy_to, "/home/chaii/apps_rails/#{fetch :application}"
 

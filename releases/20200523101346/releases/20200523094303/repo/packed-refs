@@ -1,5 +1,0 @@
-# pack-refs with: peeled fully-peeled sorted 
-9bdaee0a880c9af413f23b630be4bdd962814fad refs/heads/dependabot/bundler/puma-4.3.5
-6f9eb1002b7d3e04c821f931762c156d7544ce28 refs/heads/master
-9bdaee0a880c9af413f23b630be4bdd962814fad refs/pull/1/head
-ee9265b654596f1a2a6954272147fd897ef49eac refs/pull/1/merge

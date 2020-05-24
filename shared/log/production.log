@@ -38,3 +38,13 @@ D, [2020-05-24T11:50:06.164384 #12608] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m
 D, [2020-05-24T11:50:06.171549 #12608] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
 D, [2020-05-24T11:50:06.175793 #12608] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
 D, [2020-05-24T11:50:06.183225 #12608] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('2754433143543187260')[0m
+D, [2020-05-24T15:11:34.034169 #28681] DEBUG -- :   [1m[35m (17.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+D, [2020-05-24T15:11:34.102823 #28681] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('2754433143543187260', 0)[0m
+D, [2020-05-24T15:11:34.127103 #28681] DEBUG -- :   [1m[35m (2.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+D, [2020-05-24T15:11:34.135882 #28681] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+D, [2020-05-24T15:11:34.148161 #28681] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[34mSELECT RELEASE_LOCK('2754433143543187260')[0m
+D, [2020-05-24T15:15:59.014019 #30519] DEBUG -- :   [1m[35m (15.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+D, [2020-05-24T15:15:59.064446 #30519] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('2754433143543187260', 0)[0m
+D, [2020-05-24T15:15:59.264303 #30519] DEBUG -- :   [1m[35m (1.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+D, [2020-05-24T15:15:59.269820 #30519] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+D, [2020-05-24T15:15:59.282340 #30519] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[34mSELECT RELEASE_LOCK('2754433143543187260')[0m

@@ -936,3 +936,322 @@ is running, then the causes of this problem could be one of:
     PassengerInstanceRegistryDir option, Nginx's passenger_instance_registry_dir
     option, or Phusion Passenger Standalone's --instance-registry-dir command
     line argument.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2020-05-24 15:13:59 +0300 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [fbcef0da] Running /usr/bin/env which passenger as chaii@shop.yourhost.com
+ DEBUG [fbcef0da] Command: /usr/bin/env which passenger
+ DEBUG [fbcef0da] Finished in 0.818 seconds with exit status 1 (failed).
+ DEBUG [c0224756] Running [ -d ~/.rvm ] as chaii@shop.yourhost.com
+ DEBUG [c0224756] Command: [ -d ~/.rvm ]
+ DEBUG [c0224756] Finished in 0.012 seconds with exit status 0 (successful).
+ DEBUG [c7d4ee13] Running ~/.rvm/bin/rvm version as chaii@shop.yourhost.com
+ DEBUG [c7d4ee13] Command: ~/.rvm/bin/rvm version
+ DEBUG [c7d4ee13] 	rvm 1.29.10 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [c7d4ee13] Finished in 0.463 seconds with exit status 0 (successful).
+ DEBUG [cf996828] Running ~/.rvm/bin/rvm current as chaii@shop.yourhost.com
+ DEBUG [cf996828] Command: ~/.rvm/bin/rvm current
+ DEBUG [cf996828] 	ruby-2.7.1
+ DEBUG [cf996828] Finished in 0.390 seconds with exit status 0 (successful).
+ DEBUG [e005b376] Running ~/.rvm/bin/rvm default do ruby --version as chaii@shop.yourhost.com
+ DEBUG [e005b376] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [e005b376] 	ruby 2.7.1p83 (2020-03-31 revision a0c7c23c9c) [x86_64-linux]
+ DEBUG [e005b376] Finished in 0.797 seconds with exit status 0 (successful).
+  INFO [1c08531d] Running /usr/bin/env mkdir -p /tmp as chaii@shop.yourhost.com
+ DEBUG [1c08531d] Command: /usr/bin/env mkdir -p /tmp
+  INFO [1c08531d] Finished in 0.012 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-ShopRails-production-chaii.sh 0.0%
+  INFO Uploading /tmp/git-ssh-ShopRails-production-chaii.sh 100.0%
+  INFO [e7d0299f] Running /usr/bin/env chmod 700 /tmp/git-ssh-ShopRails-production-chaii.sh as chaii@shop.yourhost.com
+ DEBUG [e7d0299f] Command: /usr/bin/env chmod 700 /tmp/git-ssh-ShopRails-production-chaii.sh
+  INFO [e7d0299f] Finished in 0.010 seconds with exit status 0 (successful).
+  INFO [9985886a] Running /usr/bin/env git ls-remote git@github.com:Chay23/ShopRails.git HEAD as chaii@shop.yourhost.com
+ DEBUG [9985886a] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ShopRails-production-chaii.sh" ; /usr/bin/env git ls-remote git@github.com:Chay23/ShopRails.git HEAD )
+ DEBUG [9985886a] 	18912d17469e3b0b76c030d81526ba4030fcf564	HEAD
+  INFO [9985886a] Finished in 1.612 seconds with exit status 0 (successful).
+  INFO [966b6953] Running /usr/bin/env mkdir -p /home/chaii/apps_rails/ShopRails/shared /home/chaii/apps_rails/ShopRails/releases as chaii@shop.yourhost.com
+ DEBUG [966b6953] Command: /usr/bin/env mkdir -p /home/chaii/apps_rails/ShopRails/shared /home/chaii/apps_rails/ShopRails/releases
+  INFO [966b6953] Finished in 0.013 seconds with exit status 0 (successful).
+  INFO [2e04b2a0] Running /usr/bin/env mkdir -p /home/chaii/apps_rails/ShopRails/shared/log /home/chaii/apps_rails/ShopRails/shared/tmp/pids /home/chaii/apps_rails/ShopRails/shared/tmp/cache /home/chaii/apps_rails/ShopRails/shared/tmp/sockets /home/chaii/apps_rails/ShopRails/shared/vendor/bundle /home/chaii/apps_rails/ShopRails/shared/.bundle /home/chaii/apps_rails/ShopRails/shared/public/system /home/chaii/apps_rails/ShopRails/shared/public/uploads /home/chaii/apps_rails/ShopRails/shared/public/assets as chaii@shop.yourhost.com
+ DEBUG [2e04b2a0] Command: /usr/bin/env mkdir -p /home/chaii/apps_rails/ShopRails/shared/log /home/chaii/apps_rails/ShopRails/shared/tmp/pids /home/chaii/apps_rails/ShopRails/shared/tmp/cache /home/chaii/apps_rails/ShopRails/shared/tmp/sockets /home/chaii/apps_rails/ShopRails/shared/vendor/bundle /home/chaii/apps_rails/ShopRails/shared/.bundle /home/chaii/apps_rails/ShopRails/shared/public/system /home/chaii/apps_rails/ShopRails/shared/public/uploads /home/chaii/apps_rails/ShopRails/shared/public/assets
+  INFO [2e04b2a0] Finished in 0.049 seconds with exit status 0 (successful).
+ DEBUG [08af61de] Running [ -f /home/chaii/apps_rails/ShopRails/current/REVISION ] as chaii@shop.yourhost.com
+ DEBUG [08af61de] Command: [ -f /home/chaii/apps_rails/ShopRails/current/REVISION ]
+ DEBUG [08af61de] Finished in 0.007 seconds with exit status 0 (successful).
+ DEBUG [b16968b6] Running /usr/bin/env cat /home/chaii/apps_rails/ShopRails/current/REVISION 2>/dev/null as chaii@shop.yourhost.com
+ DEBUG [b16968b6] Command: /usr/bin/env cat /home/chaii/apps_rails/ShopRails/current/REVISION 2>/dev/null
+ DEBUG [b16968b6] 	18912d17469e3b0b76c030d81526ba4030fcf564
+ DEBUG [b16968b6] Finished in 0.009 seconds with exit status 0 (successful).
+ DEBUG [9a87b11c] Running [ -f /home/chaii/apps_rails/ShopRails/repo/HEAD ] as chaii@shop.yourhost.com
+ DEBUG [9a87b11c] Command: [ -f /home/chaii/apps_rails/ShopRails/repo/HEAD ]
+ DEBUG [9a87b11c] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/chaii/apps_rails/ShopRails/repo
+ DEBUG [99f7426b] Running if test ! -d /home/chaii/apps_rails/ShopRails/repo; then echo "Directory does not exist '/home/chaii/apps_rails/ShopRails/repo'" 1>&2; false; fi as chaii@shop.yourhost.com
+ DEBUG [99f7426b] Command: if test ! -d /home/chaii/apps_rails/ShopRails/repo; then echo "Directory does not exist '/home/chaii/apps_rails/ShopRails/repo'" 1>&2; false; fi
+ DEBUG [99f7426b] Finished in 0.046 seconds with exit status 0 (successful).
+  INFO [d59d11ef] Running /usr/bin/env git remote set-url origin git@github.com:Chay23/ShopRails.git as chaii@shop.yourhost.com
+ DEBUG [d59d11ef] Command: cd /home/chaii/apps_rails/ShopRails/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ShopRails-production-chaii.sh" ; /usr/bin/env git remote set-url origin git@github.com:Chay23/ShopRails.git )
+  INFO [d59d11ef] Finished in 0.021 seconds with exit status 0 (successful).
+  INFO [be4c439b] Running /usr/bin/env git remote update --prune as chaii@shop.yourhost.com
+ DEBUG [be4c439b] Command: cd /home/chaii/apps_rails/ShopRails/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ShopRails-production-chaii.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [be4c439b] 	Fetching origin
+  INFO [be4c439b] Finished in 1.663 seconds with exit status 0 (successful).
+ DEBUG [da1b7a0c] Running if test ! -d /home/chaii/apps_rails/ShopRails/repo; then echo "Directory does not exist '/home/chaii/apps_rails/ShopRails/repo'" 1>&2; false; fi as chaii@shop.yourhost.com
+ DEBUG [da1b7a0c] Command: if test ! -d /home/chaii/apps_rails/ShopRails/repo; then echo "Directory does not exist '/home/chaii/apps_rails/ShopRails/repo'" 1>&2; false; fi
+ DEBUG [da1b7a0c] Finished in 0.010 seconds with exit status 0 (successful).
+  INFO [39c64c59] Running /usr/bin/env mkdir -p /home/chaii/apps_rails/ShopRails/releases/20200524121403 as chaii@shop.yourhost.com
+ DEBUG [39c64c59] Command: cd /home/chaii/apps_rails/ShopRails/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ShopRails-production-chaii.sh" ; /usr/bin/env mkdir -p /home/chaii/apps_rails/ShopRails/releases/20200524121403 )
+  INFO [39c64c59] Finished in 0.051 seconds with exit status 0 (successful).
+  INFO [9e54ee54] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/chaii/apps_rails/ShopRails/releases/20200524121403 as chaii@shop.yourhost.com
+ DEBUG [9e54ee54] Command: cd /home/chaii/apps_rails/ShopRails/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ShopRails-production-chaii.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/chaii/apps_rails/ShopRails/releases/20200524121403 )
+  INFO [9e54ee54] Finished in 43.110 seconds with exit status 0 (successful).
+ DEBUG [1f44314f] Running if test ! -d /home/chaii/apps_rails/ShopRails/repo; then echo "Directory does not exist '/home/chaii/apps_rails/ShopRails/repo'" 1>&2; false; fi as chaii@shop.yourhost.com
+ DEBUG [1f44314f] Command: if test ! -d /home/chaii/apps_rails/ShopRails/repo; then echo "Directory does not exist '/home/chaii/apps_rails/ShopRails/repo'" 1>&2; false; fi
+ DEBUG [1f44314f] Finished in 0.090 seconds with exit status 0 (successful).
+ DEBUG [54960057] Running /usr/bin/env git rev-list --max-count=1 master as chaii@shop.yourhost.com
+ DEBUG [54960057] Command: cd /home/chaii/apps_rails/ShopRails/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ShopRails-production-chaii.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [54960057] 	18912d17469e3b0b76c030d81526ba4030fcf564
+ DEBUG [54960057] Finished in 0.097 seconds with exit status 0 (successful).
+ DEBUG [6d603e73] Running if test ! -d /home/chaii/apps_rails/ShopRails/releases/20200524121403; then echo "Directory does not exist '/home/chaii/apps_rails/ShopRails/releases/20200524121403'" 1>&2; false; fi as chaii@shop.yourhost.com
+ DEBUG [6d603e73] Command: if test ! -d /home/chaii/apps_rails/ShopRails/releases/20200524121403; then echo "Directory does not exist '/home/chaii/apps_rails/ShopRails/releases/20200524121403'" 1>&2; false; fi
+ DEBUG [6d603e73] Finished in 0.009 seconds with exit status 0 (successful).
+  INFO [75aae1e1] Running /usr/bin/env echo "18912d17469e3b0b76c030d81526ba4030fcf564" > REVISION as chaii@shop.yourhost.com
+ DEBUG [75aae1e1] Command: cd /home/chaii/apps_rails/ShopRails/releases/20200524121403 && /usr/bin/env echo "18912d17469e3b0b76c030d81526ba4030fcf564" > REVISION
+  INFO [75aae1e1] Finished in 0.057 seconds with exit status 0 (successful).
+  INFO [61218c8c] Running /usr/bin/env mkdir -p /home/chaii/apps_rails/ShopRails/releases/20200524121403 /home/chaii/apps_rails/ShopRails/releases/20200524121403/tmp /home/chaii/apps_rails/ShopRails/releases/20200524121403/vendor /home/chaii/apps_rails/ShopRails/releases/20200524121403/public as chaii@shop.yourhost.com
+ DEBUG [61218c8c] Command: /usr/bin/env mkdir -p /home/chaii/apps_rails/ShopRails/releases/20200524121403 /home/chaii/apps_rails/ShopRails/releases/20200524121403/tmp /home/chaii/apps_rails/ShopRails/releases/20200524121403/vendor /home/chaii/apps_rails/ShopRails/releases/20200524121403/public
+  INFO [61218c8c] Finished in 0.014 seconds with exit status 0 (successful).
+ DEBUG [97027dc1] Running [ -L /home/chaii/apps_rails/ShopRails/releases/20200524121403/log ] as chaii@shop.yourhost.com
+ DEBUG [97027dc1] Command: [ -L /home/chaii/apps_rails/ShopRails/releases/20200524121403/log ]
+ DEBUG [97027dc1] Finished in 0.009 seconds with exit status 1 (failed).
+ DEBUG [43d9ed81] Running [ -d /home/chaii/apps_rails/ShopRails/releases/20200524121403/log ] as chaii@shop.yourhost.com
+ DEBUG [43d9ed81] Command: [ -d /home/chaii/apps_rails/ShopRails/releases/20200524121403/log ]
+ DEBUG [43d9ed81] Finished in 0.047 seconds with exit status 0 (successful).
+  INFO [45e3ecea] Running /usr/bin/env rm -rf /home/chaii/apps_rails/ShopRails/releases/20200524121403/log as chaii@shop.yourhost.com
+ DEBUG [45e3ecea] Command: /usr/bin/env rm -rf /home/chaii/apps_rails/ShopRails/releases/20200524121403/log
+  INFO [45e3ecea] Finished in 0.010 seconds with exit status 0 (successful).
+  INFO [93c5c8a1] Running /usr/bin/env ln -s /home/chaii/apps_rails/ShopRails/shared/log /home/chaii/apps_rails/ShopRails/releases/20200524121403/log as chaii@shop.yourhost.com
+ DEBUG [93c5c8a1] Command: /usr/bin/env ln -s /home/chaii/apps_rails/ShopRails/shared/log /home/chaii/apps_rails/ShopRails/releases/20200524121403/log
+  INFO [93c5c8a1] Finished in 0.011 seconds with exit status 0 (successful).
+ DEBUG [e002dbb7] Running [ -L /home/chaii/apps_rails/ShopRails/releases/20200524121403/tmp/pids ] as chaii@shop.yourhost.com
+ DEBUG [e002dbb7] Command: [ -L /home/chaii/apps_rails/ShopRails/releases/20200524121403/tmp/pids ]
+ DEBUG [e002dbb7] Finished in 0.048 seconds with exit status 1 (failed).
+ DEBUG [7e376d9c] Running [ -d /home/chaii/apps_rails/ShopRails/releases/20200524121403/tmp/pids ] as chaii@shop.yourhost.com
+ DEBUG [7e376d9c] Command: [ -d /home/chaii/apps_rails/ShopRails/releases/20200524121403/tmp/pids ]
+ DEBUG [7e376d9c] Finished in 0.008 seconds with exit status 1 (failed).
+  INFO [40ad9f5b] Running /usr/bin/env ln -s /home/chaii/apps_rails/ShopRails/shared/tmp/pids /home/chaii/apps_rails/ShopRails/releases/20200524121403/tmp/pids as chaii@shop.yourhost.com
+ DEBUG [40ad9f5b] Command: /usr/bin/env ln -s /home/chaii/apps_rails/ShopRails/shared/tmp/pids /home/chaii/apps_rails/ShopRails/releases/20200524121403/tmp/pids
+  INFO [40ad9f5b] Finished in 0.010 seconds with exit status 0 (successful).
+ DEBUG [72fb60ae] Running [ -L /home/chaii/apps_rails/ShopRails/releases/20200524121403/tmp/cache ] as chaii@shop.yourhost.com
+ DEBUG [72fb60ae] Command: [ -L /home/chaii/apps_rails/ShopRails/releases/20200524121403/tmp/cache ]
+ DEBUG [72fb60ae] Finished in 0.049 seconds with exit status 1 (failed).
+ DEBUG [d2dc7fbe] Running [ -d /home/chaii/apps_rails/ShopRails/releases/20200524121403/tmp/cache ] as chaii@shop.yourhost.com
+ DEBUG [d2dc7fbe] Command: [ -d /home/chaii/apps_rails/ShopRails/releases/20200524121403/tmp/cache ]
+ DEBUG [d2dc7fbe] Finished in 0.008 seconds with exit status 1 (failed).
+  INFO [89015a36] Running /usr/bin/env ln -s /home/chaii/apps_rails/ShopRails/shared/tmp/cache /home/chaii/apps_rails/ShopRails/releases/20200524121403/tmp/cache as chaii@shop.yourhost.com
+ DEBUG [89015a36] Command: /usr/bin/env ln -s /home/chaii/apps_rails/ShopRails/shared/tmp/cache /home/chaii/apps_rails/ShopRails/releases/20200524121403/tmp/cache
+  INFO [89015a36] Finished in 0.010 seconds with exit status 0 (successful).
+ DEBUG [0593199a] Running [ -L /home/chaii/apps_rails/ShopRails/releases/20200524121403/tmp/sockets ] as chaii@shop.yourhost.com
+ DEBUG [0593199a] Command: [ -L /home/chaii/apps_rails/ShopRails/releases/20200524121403/tmp/sockets ]
+ DEBUG [0593199a] Finished in 0.049 seconds with exit status 1 (failed).
+ DEBUG [64abf150] Running [ -d /home/chaii/apps_rails/ShopRails/releases/20200524121403/tmp/sockets ] as chaii@shop.yourhost.com
+ DEBUG [64abf150] Command: [ -d /home/chaii/apps_rails/ShopRails/releases/20200524121403/tmp/sockets ]
+ DEBUG [64abf150] Finished in 0.008 seconds with exit status 1 (failed).
+  INFO [c6d989ab] Running /usr/bin/env ln -s /home/chaii/apps_rails/ShopRails/shared/tmp/sockets /home/chaii/apps_rails/ShopRails/releases/20200524121403/tmp/sockets as chaii@shop.yourhost.com
+ DEBUG [c6d989ab] Command: /usr/bin/env ln -s /home/chaii/apps_rails/ShopRails/shared/tmp/sockets /home/chaii/apps_rails/ShopRails/releases/20200524121403/tmp/sockets
+  INFO [c6d989ab] Finished in 0.010 seconds with exit status 0 (successful).
+ DEBUG [1601202f] Running [ -L /home/chaii/apps_rails/ShopRails/releases/20200524121403/vendor/bundle ] as chaii@shop.yourhost.com
+ DEBUG [1601202f] Command: [ -L /home/chaii/apps_rails/ShopRails/releases/20200524121403/vendor/bundle ]
+ DEBUG [1601202f] Finished in 0.048 seconds with exit status 1 (failed).
+ DEBUG [59095cf1] Running [ -d /home/chaii/apps_rails/ShopRails/releases/20200524121403/vendor/bundle ] as chaii@shop.yourhost.com
+ DEBUG [59095cf1] Command: [ -d /home/chaii/apps_rails/ShopRails/releases/20200524121403/vendor/bundle ]
+ DEBUG [59095cf1] Finished in 0.009 seconds with exit status 1 (failed).
+  INFO [3ef23487] Running /usr/bin/env ln -s /home/chaii/apps_rails/ShopRails/shared/vendor/bundle /home/chaii/apps_rails/ShopRails/releases/20200524121403/vendor/bundle as chaii@shop.yourhost.com
+ DEBUG [3ef23487] Command: /usr/bin/env ln -s /home/chaii/apps_rails/ShopRails/shared/vendor/bundle /home/chaii/apps_rails/ShopRails/releases/20200524121403/vendor/bundle
+  INFO [3ef23487] Finished in 0.011 seconds with exit status 0 (successful).
+ DEBUG [c0581725] Running [ -L /home/chaii/apps_rails/ShopRails/releases/20200524121403/.bundle ] as chaii@shop.yourhost.com
+ DEBUG [c0581725] Command: [ -L /home/chaii/apps_rails/ShopRails/releases/20200524121403/.bundle ]
+ DEBUG [c0581725] Finished in 0.050 seconds with exit status 1 (failed).
+ DEBUG [2b46816e] Running [ -d /home/chaii/apps_rails/ShopRails/releases/20200524121403/.bundle ] as chaii@shop.yourhost.com
+ DEBUG [2b46816e] Command: [ -d /home/chaii/apps_rails/ShopRails/releases/20200524121403/.bundle ]
+ DEBUG [2b46816e] Finished in 0.007 seconds with exit status 1 (failed).
+  INFO [e096d9a0] Running /usr/bin/env ln -s /home/chaii/apps_rails/ShopRails/shared/.bundle /home/chaii/apps_rails/ShopRails/releases/20200524121403/.bundle as chaii@shop.yourhost.com
+ DEBUG [e096d9a0] Command: /usr/bin/env ln -s /home/chaii/apps_rails/ShopRails/shared/.bundle /home/chaii/apps_rails/ShopRails/releases/20200524121403/.bundle
+  INFO [e096d9a0] Finished in 0.009 seconds with exit status 0 (successful).
+ DEBUG [6158bb25] Running [ -L /home/chaii/apps_rails/ShopRails/releases/20200524121403/public/system ] as chaii@shop.yourhost.com
+ DEBUG [6158bb25] Command: [ -L /home/chaii/apps_rails/ShopRails/releases/20200524121403/public/system ]
+ DEBUG [6158bb25] Finished in 0.052 seconds with exit status 1 (failed).
+ DEBUG [12e6abb6] Running [ -d /home/chaii/apps_rails/ShopRails/releases/20200524121403/public/system ] as chaii@shop.yourhost.com
+ DEBUG [12e6abb6] Command: [ -d /home/chaii/apps_rails/ShopRails/releases/20200524121403/public/system ]
+ DEBUG [12e6abb6] Finished in 0.008 seconds with exit status 1 (failed).
+  INFO [70d6e3a3] Running /usr/bin/env ln -s /home/chaii/apps_rails/ShopRails/shared/public/system /home/chaii/apps_rails/ShopRails/releases/20200524121403/public/system as chaii@shop.yourhost.com
+ DEBUG [70d6e3a3] Command: /usr/bin/env ln -s /home/chaii/apps_rails/ShopRails/shared/public/system /home/chaii/apps_rails/ShopRails/releases/20200524121403/public/system
+  INFO [70d6e3a3] Finished in 0.012 seconds with exit status 0 (successful).
+ DEBUG [c31cb406] Running [ -L /home/chaii/apps_rails/ShopRails/releases/20200524121403/public/uploads ] as chaii@shop.yourhost.com
+ DEBUG [c31cb406] Command: [ -L /home/chaii/apps_rails/ShopRails/releases/20200524121403/public/uploads ]
+ DEBUG [c31cb406] Finished in 0.048 seconds with exit status 1 (failed).
+ DEBUG [95b386d4] Running [ -d /home/chaii/apps_rails/ShopRails/releases/20200524121403/public/uploads ] as chaii@shop.yourhost.com
+ DEBUG [95b386d4] Command: [ -d /home/chaii/apps_rails/ShopRails/releases/20200524121403/public/uploads ]
+ DEBUG [95b386d4] Finished in 0.008 seconds with exit status 1 (failed).
+  INFO [02204acc] Running /usr/bin/env ln -s /home/chaii/apps_rails/ShopRails/shared/public/uploads /home/chaii/apps_rails/ShopRails/releases/20200524121403/public/uploads as chaii@shop.yourhost.com
+ DEBUG [02204acc] Command: /usr/bin/env ln -s /home/chaii/apps_rails/ShopRails/shared/public/uploads /home/chaii/apps_rails/ShopRails/releases/20200524121403/public/uploads
+  INFO [02204acc] Finished in 0.010 seconds with exit status 0 (successful).
+ DEBUG [9ae374f7] Running [ -L /home/chaii/apps_rails/ShopRails/releases/20200524121403/public/assets ] as chaii@shop.yourhost.com
+ DEBUG [9ae374f7] Command: [ -L /home/chaii/apps_rails/ShopRails/releases/20200524121403/public/assets ]
+ DEBUG [9ae374f7] Finished in 0.047 seconds with exit status 1 (failed).
+ DEBUG [1e00de32] Running [ -d /home/chaii/apps_rails/ShopRails/releases/20200524121403/public/assets ] as chaii@shop.yourhost.com
+ DEBUG [1e00de32] Command: [ -d /home/chaii/apps_rails/ShopRails/releases/20200524121403/public/assets ]
+ DEBUG [1e00de32] Finished in 0.014 seconds with exit status 1 (failed).
+  INFO [d7d9e5a8] Running /usr/bin/env ln -s /home/chaii/apps_rails/ShopRails/shared/public/assets /home/chaii/apps_rails/ShopRails/releases/20200524121403/public/assets as chaii@shop.yourhost.com
+ DEBUG [d7d9e5a8] Command: /usr/bin/env ln -s /home/chaii/apps_rails/ShopRails/shared/public/assets /home/chaii/apps_rails/ShopRails/releases/20200524121403/public/assets
+  INFO [d7d9e5a8] Finished in 0.011 seconds with exit status 0 (successful).
+ DEBUG [bb07940a] Running if test ! -d /home/chaii/apps_rails/ShopRails/releases/20200524121403; then echo "Directory does not exist '/home/chaii/apps_rails/ShopRails/releases/20200524121403'" 1>&2; false; fi as chaii@shop.yourhost.com
+ DEBUG [bb07940a] Command: if test ! -d /home/chaii/apps_rails/ShopRails/releases/20200524121403; then echo "Directory does not exist '/home/chaii/apps_rails/ShopRails/releases/20200524121403'" 1>&2; false; fi
+ DEBUG [bb07940a] Finished in 0.049 seconds with exit status 0 (successful).
+ DEBUG [53dd9333] Running ~/.rvm/bin/rvm default do bundle check --path /home/chaii/apps_rails/ShopRails/shared/bundle as chaii@shop.yourhost.com
+ DEBUG [53dd9333] Command: cd /home/chaii/apps_rails/ShopRails/releases/20200524121403 && ~/.rvm/bin/rvm default do bundle check --path /home/chaii/apps_rails/ShopRails/shared/bundle
+ DEBUG [53dd9333] 	[DEPRECATED] The `--path` flag is deprecated because it relies on being remembered across bundler invocations, which bundler will no longer do in future versions. Instead please use `bundle config set path '/home/chaii/apps_rails/ShopRails/shared/bundle'`, and stop using this flag
+ DEBUG [53dd9333] 	The Gemfile's dependencies are satisfied
+ DEBUG [53dd9333] Finished in 2.122 seconds with exit status 0 (successful).
+  INFO The Gemfile's dependencies are satisfied, skipping installation
+ DEBUG [baea0f4d] Running if test ! -d /home/chaii/apps_rails/ShopRails/releases/20200524121403; then echo "Directory does not exist '/home/chaii/apps_rails/ShopRails/releases/20200524121403'" 1>&2; false; fi as chaii@shop.yourhost.com
+ DEBUG [baea0f4d] Command: if test ! -d /home/chaii/apps_rails/ShopRails/releases/20200524121403; then echo "Directory does not exist '/home/chaii/apps_rails/ShopRails/releases/20200524121403'" 1>&2; false; fi
+ DEBUG [baea0f4d] Finished in 0.048 seconds with exit status 0 (successful).
+  INFO [19bdb96b] Running ~/.rvm/bin/rvm default do bundle exec rake assets:precompile as chaii@shop.yourhost.com
+ DEBUG [19bdb96b] Command: cd /home/chaii/apps_rails/ShopRails/releases/20200524121403 && ( export RAILS_ENV="production" RAILS_GROUPS="" ; ~/.rvm/bin/rvm default do bundle exec rake assets:precompile )
+ DEBUG [19bdb96b] 	yarn install v1.22.4
+ DEBUG [19bdb96b] 	[1/4] Resolving packages...
+ DEBUG [19bdb96b] 	[2/4] Fetching packages...
+ DEBUG [19bdb96b] 	info fsevents@1.2.12: The platform "linux" is incompatible with this module.
+ DEBUG [19bdb96b] 	info "fsevents@1.2.12" is an optional dependency and failed compatibility check. Excluding it from installation.
+ DEBUG [19bdb96b] 	[3/4] Linking dependencies...
+ DEBUG [19bdb96b] 	warning " > webpack-dev-server@3.10.3" has unmet peer dependency "webpack@^4.0.0 || ^5.0.0".
+ DEBUG [19bdb96b] 	warning "webpack-dev-server > webpack-dev-middleware@3.7.2" has unmet peer dependency "webpack@^4.0.0".
+ DEBUG [19bdb96b] 	[4/4] Building fresh packages...
+ DEBUG [19bdb96b] 	Done in 18.97s.
+ DEBUG [19bdb96b] 	yarn install v1.22.4
+ DEBUG [19bdb96b] 	[1/4] Resolving packages...
+ DEBUG [19bdb96b] 	[2/4] Fetching packages...
+ DEBUG [19bdb96b] 	info fsevents@1.2.12: The platform "linux" is incompatible with this module.
+ DEBUG [19bdb96b] 	info "fsevents@1.2.12" is an optional dependency and failed compatibility check. Excluding it from installation.
+ DEBUG [19bdb96b] 	[3/4] Linking dependencies...
+ DEBUG [19bdb96b] 	warning " > webpack-dev-server@3.10.3" has unmet peer dependency "webpack@^4.0.0 || ^5.0.0".
+ DEBUG [19bdb96b] 	warning "webpack-dev-server > webpack-dev-middleware@3.7.2" has unmet peer dependency "webpack@^4.0.0".
+ DEBUG [19bdb96b] 	[4/4] Building fresh packages...
+ DEBUG [19bdb96b] 	Done in 6.91s.
+ DEBUG [19bdb96b] 	Compiling...
+ DEBUG [19bdb96b] 	Compiled all packs in /home/chaii/apps_rails/ShopRails/releases/20200524121403/public/packs
+Hash: ef199f40c1818adbe62b
+Version: webpack 4.42.1
+Time: 24890ms
+Built at: 05/24/2020 3:15:52 PM
+                                             Asset       Size  Chunks                                Chunk Names
+            js/application-4eaa7516a95f7d6070e2.js    260 KiB       0  [emitted] [immutable]  [big]  application
+js/application-4eaa7516a95f7d6070e2.js.LICENSE.txt  696 bytes          [emitted]                     
+         js/application-4eaa7516a95f7d6070e2.js.br   53.8 KiB          [emitted]                     
+         js/application-4eaa7516a95f7d6070e2.js.gz     80 KiB          [emitted]                     
+        js/application-4eaa7516a95f7d6070e2.js.map   1.11 MiB       0  [emitted] [dev]               application
+     js/application-4eaa7516a95f7d6070e2.js.map.br    170 KiB          [emitted]                     
+     js/application-4eaa7516a95f7d6070e2.js.map.gz    326 KiB          [emitted]              [big]  
+        js/locale_switcher-7c479e1193d0abe0d897.js   1.12 KiB       1  [emitted] [immutable]         locale_switcher
+     js/locale_switcher-7c479e1193d0abe0d897.js.br  498 bytes          [emitted]                     
+     js/locale_switcher-7c479e1193d0abe0d897.js.gz  595 bytes          [emitted]                     
+    js/locale_switcher-7c479e1193d0abe0d897.js.map   4.87 KiB       1  [emitted] [dev]               locale_switcher
+ js/locale_switcher-7c479e1193d0abe0d897.js.map.br   1.66 KiB          [emitted]                     
+ js/locale_switcher-7c479e1193d0abe0d897.js.map.gz   1.88 KiB          [emitted]                     
+                                     manifest.json  731 bytes          [emitted]                     
+                                  manifest.json.br  169 bytes          [emitted]                     
+                                  manifest.json.gz  205 bytes          [emitted]                     
+Entrypoint application [big] = js/application-4eaa7516a95f7d6070e2.js js/application-4eaa7516a95f7d6070e2.js.map
+Entrypoint locale_switcher = js/locale_switcher-7c479e1193d0abe0d897.js js/locale_switcher-7c479e1193d0abe0d897.js.map
+ [38] (webpack)/buildin/module.js 552 bytes {0} [built]
+ [72] ./app/javascript/packs/application.js 760 bytes {0} [built]
+[112] ./app/javascript/channels/index.js 205 bytes {0} [built]
+[113] ./app/javascript/channels sync _channel\.js$ 160 bytes {0} [built]
+[115] ./app/javascript/packs/locale_switcher.js 134 bytes {1} [built]
+    + 111 hidden modules
+
+WARNING in asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  js/application-4eaa7516a95f7d6070e2.js (260 KiB)
+  js/application-4eaa7516a95f7d6070e2.js.map.gz (326 KiB)
+
+WARNING in entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  application (260 KiB)
+      js/application-4eaa7516a95f7d6070e2.js
+
+
+WARNING in webpack performance recommendations: 
+You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.
+For more info visit https://webpack.js.org/guides/code-splitting/
+
+  INFO [19bdb96b] Finished in 61.044 seconds with exit status 0 (successful).
+ DEBUG [14626b9e] Running if test ! -d /home/chaii/apps_rails/ShopRails/releases/20200524121403; then echo "Directory does not exist '/home/chaii/apps_rails/ShopRails/releases/20200524121403'" 1>&2; false; fi as chaii@shop.yourhost.com
+ DEBUG [14626b9e] Command: if test ! -d /home/chaii/apps_rails/ShopRails/releases/20200524121403; then echo "Directory does not exist '/home/chaii/apps_rails/ShopRails/releases/20200524121403'" 1>&2; false; fi
+ DEBUG [14626b9e] Finished in 0.032 seconds with exit status 0 (successful).
+  INFO [2d2668c0] Running /usr/bin/env mkdir -p /home/chaii/apps_rails/ShopRails/releases/20200524121403/assets_manifest_backup as chaii@shop.yourhost.com
+ DEBUG [2d2668c0] Command: cd /home/chaii/apps_rails/ShopRails/releases/20200524121403 && /usr/bin/env mkdir -p /home/chaii/apps_rails/ShopRails/releases/20200524121403/assets_manifest_backup
+  INFO [2d2668c0] Finished in 0.064 seconds with exit status 0 (successful).
+ DEBUG [a76a764e] Running /usr/bin/env ls /home/chaii/apps_rails/ShopRails/releases/20200524121403/public/assets/.sprockets-manifest* as chaii@shop.yourhost.com
+ DEBUG [a76a764e] Command: cd /home/chaii/apps_rails/ShopRails/releases/20200524121403 && /usr/bin/env ls /home/chaii/apps_rails/ShopRails/releases/20200524121403/public/assets/.sprockets-manifest*
+ DEBUG [a76a764e] 	/home/chaii/apps_rails/ShopRails/releases/20200524121403/public/assets/.sprockets-manifest-cc535ca98d4d251758db4a7fa45a2bca.json
+ DEBUG [a76a764e] Finished in 0.011 seconds with exit status 0 (successful).
+ DEBUG [52359982] Running /usr/bin/env ls /home/chaii/apps_rails/ShopRails/releases/20200524121403/public/assets/.sprockets-manifest* as chaii@shop.yourhost.com
+ DEBUG [52359982] Command: cd /home/chaii/apps_rails/ShopRails/releases/20200524121403 && /usr/bin/env ls /home/chaii/apps_rails/ShopRails/releases/20200524121403/public/assets/.sprockets-manifest*
+ DEBUG [52359982] 	/home/chaii/apps_rails/ShopRails/releases/20200524121403/public/assets/.sprockets-manifest-cc535ca98d4d251758db4a7fa45a2bca.json
+ DEBUG [52359982] Finished in 0.008 seconds with exit status 0 (successful).
+  INFO [db35583f] Running /usr/bin/env cp /home/chaii/apps_rails/ShopRails/releases/20200524121403/public/assets/.sprockets-manifest-cc535ca98d4d251758db4a7fa45a2bca.json /home/chaii/apps_rails/ShopRails/releases/20200524121403/assets_manifest_backup as chaii@shop.yourhost.com
+ DEBUG [db35583f] Command: cd /home/chaii/apps_rails/ShopRails/releases/20200524121403 && /usr/bin/env cp /home/chaii/apps_rails/ShopRails/releases/20200524121403/public/assets/.sprockets-manifest-cc535ca98d4d251758db4a7fa45a2bca.json /home/chaii/apps_rails/ShopRails/releases/20200524121403/assets_manifest_backup
+  INFO [db35583f] Finished in 0.054 seconds with exit status 0 (successful).
+  INFO [deploy:migrate] Run `rake db:migrate`
+ DEBUG [41dfc743] Running if test ! -d /home/chaii/apps_rails/ShopRails/releases/20200524121403; then echo "Directory does not exist '/home/chaii/apps_rails/ShopRails/releases/20200524121403'" 1>&2; false; fi as chaii@shop.yourhost.com
+ DEBUG [41dfc743] Command: if test ! -d /home/chaii/apps_rails/ShopRails/releases/20200524121403; then echo "Directory does not exist '/home/chaii/apps_rails/ShopRails/releases/20200524121403'" 1>&2; false; fi
+ DEBUG [41dfc743] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO [73f75794] Running ~/.rvm/bin/rvm default do bundle exec rake db:migrate as chaii@shop.yourhost.com
+ DEBUG [73f75794] Command: cd /home/chaii/apps_rails/ShopRails/releases/20200524121403 && ( export RAILS_ENV="production" ; ~/.rvm/bin/rvm default do bundle exec rake db:migrate )
+ DEBUG [73f75794] 	/home/chaii/apps_rails/ShopRails/shared/bundle/ruby/2.7.0/gems/activerecord-6.0.2.2/lib/active_record/connection_adapters/mysql/database_statements.rb:12: warning: Using the last argument as keyword parameters is deprecated; maybe ** should be added to the call
+/home/chaii/apps_rails/ShopRails/shared/bundle/ruby/2.7.0/gems/activerecord-6.0.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:96: warning: The called method `select_all' is defined here
+ DEBUG [73f75794] 	/home/chaii/apps_rails/ShopRails/shared/bundle/ruby/2.7.0/gems/activerecord-6.0.2.2/lib/active_record/transactions.rb:212: warning: Using the last argument as keyword parameters is deprecated; maybe ** should be added to the call
+/home/chaii/apps_rails/ShopRails/shared/bundle/ruby/2.7.0/gems/activerecord-6.0.2.2/lib/active_record/connection_adapters/abstract/database_statements.rb:274: warning: The called method `transaction' is defined here
+ DEBUG [73f75794] 	/home/chaii/apps_rails/ShopRails/shared/bundle/ruby/2.7.0/gems/activerecord-6.0.2.2/lib/active_record/persistence.rb:503: warning: Using the last argument as keyword parameters is deprecated; maybe ** should be added to the call
+/home/chaii/apps_rails/ShopRails/shared/bundle/ruby/2.7.0/gems/activerecord-6.0.2.2/lib/active_record/timestamp.rb:127: warning: The called method `create_or_update' is defined here
+  INFO [73f75794] Finished in 6.313 seconds with exit status 0 (successful).
+  INFO [7a5b680d] Running /usr/bin/env ln -s /home/chaii/apps_rails/ShopRails/releases/20200524121403 /home/chaii/apps_rails/ShopRails/releases/current as chaii@shop.yourhost.com
+ DEBUG [7a5b680d] Command: /usr/bin/env ln -s /home/chaii/apps_rails/ShopRails/releases/20200524121403 /home/chaii/apps_rails/ShopRails/releases/current
+  INFO [7a5b680d] Finished in 0.027 seconds with exit status 0 (successful).
+  INFO [226eb784] Running /usr/bin/env mv /home/chaii/apps_rails/ShopRails/releases/current /home/chaii/apps_rails/ShopRails as chaii@shop.yourhost.com
+ DEBUG [226eb784] Command: /usr/bin/env mv /home/chaii/apps_rails/ShopRails/releases/current /home/chaii/apps_rails/ShopRails
+  INFO [226eb784] Finished in 0.081 seconds with exit status 0 (successful).
+ DEBUG [5dab4894] Running if test ! -d /home/chaii/apps_rails/ShopRails/releases/20200524121403; then echo "Directory does not exist '/home/chaii/apps_rails/ShopRails/releases/20200524121403'" 1>&2; false; fi as chaii@shop.yourhost.com
+ DEBUG [5dab4894] Command: if test ! -d /home/chaii/apps_rails/ShopRails/releases/20200524121403; then echo "Directory does not exist '/home/chaii/apps_rails/ShopRails/releases/20200524121403'" 1>&2; false; fi
+ DEBUG [5dab4894] Finished in 0.010 seconds with exit status 0 (successful).
+  INFO [22f128bf] Running /usr/bin/env mkdir -p /home/chaii/apps_rails/ShopRails/releases/20200524121403/tmp as chaii@shop.yourhost.com
+ DEBUG [22f128bf] Command: cd /home/chaii/apps_rails/ShopRails/releases/20200524121403 && /usr/bin/env mkdir -p /home/chaii/apps_rails/ShopRails/releases/20200524121403/tmp
+  INFO [22f128bf] Finished in 0.029 seconds with exit status 0 (successful).
+  INFO [48f6fe66] Running /usr/bin/env touch /home/chaii/apps_rails/ShopRails/releases/20200524121403/tmp/restart.txt as chaii@shop.yourhost.com
+ DEBUG [48f6fe66] Command: cd /home/chaii/apps_rails/ShopRails/releases/20200524121403 && /usr/bin/env touch /home/chaii/apps_rails/ShopRails/releases/20200524121403/tmp/restart.txt
+  INFO [48f6fe66] Finished in 0.100 seconds with exit status 0 (successful).
+ DEBUG [45ab86bb] Running /usr/bin/env ls -x /home/chaii/apps_rails/ShopRails/releases as chaii@shop.yourhost.com
+ DEBUG [45ab86bb] Command: /usr/bin/env ls -x /home/chaii/apps_rails/ShopRails/releases
+ DEBUG [45ab86bb] 	20200523101346	20200523102354	20200523210721	20200524084915	20200524120926
+20200524121403
+ DEBUG [45ab86bb] Finished in 0.032 seconds with exit status 0 (successful).
+  INFO Keeping 5 of 6 deployed releases on shop.yourhost.com
+ DEBUG [160fe2d7] Running [ -d /home/chaii/apps_rails/ShopRails/current ] as chaii@shop.yourhost.com
+ DEBUG [160fe2d7] Command: [ -d /home/chaii/apps_rails/ShopRails/current ]
+ DEBUG [160fe2d7] Finished in 0.011 seconds with exit status 0 (successful).
+ DEBUG [9b1f2bde] Running /usr/bin/env readlink /home/chaii/apps_rails/ShopRails/current as chaii@shop.yourhost.com
+ DEBUG [9b1f2bde] Command: /usr/bin/env readlink /home/chaii/apps_rails/ShopRails/current
+ DEBUG [9b1f2bde] 	/home/chaii/apps_rails/ShopRails/releases/20200524121403
+ DEBUG [9b1f2bde] Finished in 0.064 seconds with exit status 0 (successful).
+  INFO [a4a790e5] Running /usr/bin/env rm -rf /home/chaii/apps_rails/ShopRails/releases/20200523101346 as chaii@shop.yourhost.com
+ DEBUG [a4a790e5] Command: /usr/bin/env rm -rf /home/chaii/apps_rails/ShopRails/releases/20200523101346
+  INFO [a4a790e5] Finished in 9.299 seconds with exit status 0 (successful).
+ DEBUG [afc8634b] Running if test ! -d /home/chaii/apps_rails/ShopRails/releases; then echo "Directory does not exist '/home/chaii/apps_rails/ShopRails/releases'" 1>&2; false; fi as chaii@shop.yourhost.com
+ DEBUG [afc8634b] Command: if test ! -d /home/chaii/apps_rails/ShopRails/releases; then echo "Directory does not exist '/home/chaii/apps_rails/ShopRails/releases'" 1>&2; false; fi
+ DEBUG [afc8634b] Finished in 0.026 seconds with exit status 0 (successful).
+  INFO [7b36a837] Running /usr/bin/env echo "Branch master (at 18912d17469e3b0b76c030d81526ba4030fcf564) deployed as release 20200524121403 by chaii" >> /home/chaii/apps_rails/ShopRails/revisions.log as chaii@shop.yourhost.com
+ DEBUG [7b36a837] Command: cd /home/chaii/apps_rails/ShopRails/releases && /usr/bin/env echo "Branch master (at 18912d17469e3b0b76c030d81526ba4030fcf564) deployed as release 20200524121403 by chaii" >> /home/chaii/apps_rails/ShopRails/revisions.log
+  INFO [7b36a837] Finished in 0.055 seconds with exit status 0 (successful).

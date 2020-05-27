@@ -16,10 +16,10 @@ gem 'jquery-ui-rails'
 gem 'rails', '~> 6.0.2', '>= 6.0.2.2'
 # Use sqlite3 as the database for Active Record
 
-group :production do
-gem 'mysql2', '~> 0.4.0'
-end
-
+#group :production do
+#gem 'mysql2', '~> 0.4.0'
+#end
+gem 'pg'
 
 # Use Puma as the app server
 gem 'puma', '~> 4.1'

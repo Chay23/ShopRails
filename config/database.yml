@@ -11,7 +11,7 @@ default: &default
 
 development:
   <<: *default
-  #database: db/development.sqlite3
+  database: depot_development
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -21,11 +21,10 @@ test:
   #database: db/test.sqlite3
 
 production:
-  adapter: postgresql
-  encoding: utf8
-  reconnect: false
+  <<: *default
+  #adapter: postgresql
+  #host: localhost
+  #port: 5432
   database: depot_production
-  pool: 5
-  username: chaii
+  user: chaii
   password: chaii5277
-  host: localhost

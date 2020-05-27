@@ -1,0 +1,16 @@
+current directory: /home/chaii/apps_rails/ShopRails/shared/bundle/ruby/2.7.0/gems/bigdecimal-1.4.2/ext/bigdecimal/util
+/home/chaii/.rvm/rubies/ruby-2.7.1/bin/ruby -I /home/chaii/.rvm/rubies/ruby-2.7.1/lib/ruby/site_ruby/2.7.0 -r ./siteconf20200527-20468-sfxeh6.rb extconf.rb
+checking for Windows... no
+creating Makefile
+
+current directory: /home/chaii/apps_rails/ShopRails/shared/bundle/ruby/2.7.0/gems/bigdecimal-1.4.2/ext/bigdecimal/util
+make "DESTDIR=" clean
+
+current directory: /home/chaii/apps_rails/ShopRails/shared/bundle/ruby/2.7.0/gems/bigdecimal-1.4.2/ext/bigdecimal/util
+make "DESTDIR="
+compiling util.c
+linking shared-object bigdecimal/util.so
+
+current directory: /home/chaii/apps_rails/ShopRails/shared/bundle/ruby/2.7.0/gems/bigdecimal-1.4.2/ext/bigdecimal/util
+make "DESTDIR=" install
+/usr/bin/install -m 0755 util.so ./.gem.20200527-20468-e95hwc/bigdecimal
